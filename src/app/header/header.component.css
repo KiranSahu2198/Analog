@@ -1,0 +1,17 @@
+.header{
+    background: #0060c0;
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    overflow-y: auto;
+}
+.header .logo{
+    float: left;
+}
+.header .userInfo{
+    float: right;
+    color: #fff;
+}
+.header .userInfo i{
+    font-size: 36px;
+}

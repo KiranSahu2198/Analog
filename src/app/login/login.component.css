@@ -1,0 +1,147 @@
+/* html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+/*   src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+/*        url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+/*        url('../fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+/*        url('../fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+/*        url('../fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+/* }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body { font-family: 'Open Sans', sans-serif; color: #333333; background: #eeeeee; } */
+.loginBox{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 550px;
+	box-shadow: 0px 5px 50px 2px rgba(0, 0, 0, 0.4);
+	background: #fff;
+	position: absolute;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.loginBox::before {
+	content: '';
+	height: 60% !important;
+	width: 100%;
+	background-color: #3367d6 ;
+	border-radius: 5px 5px 0 0;
+	left: 0;
+	/*background-image: linear-gradient(red, yellow);*/
+	position: absolute;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+.loginBox .loginForm{
+	height: 250px;
+	box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	background: #fff;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -70%);
+}
+.loginBox .loginForm h2{
+	font-size: 24px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	text-align: left;
+}
+.loginBox .loginForm form input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 16px;
+	padding: 7px 0;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0px;
+	margin-bottom: 30px;
+	box-shadow:none;
+}
+/*.form-control:focus{border-color:none; box-shadow:none;}*/
+.loginBox .loginForm form{
+	position: relative;
+}
+.loginBox .loginForm form label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	padding: 5px 10px;
+	transition: .5s;
+	font-weight: 400;
+	pointer-events: none;
+	color: #999;
+}
+/*.loginBox .loginForm form input:focus ~ label, .loginBox .loginForm form input:valid ~ label {
+	top: -18px !important;
+	font-size: 12px !important;
+}*/
+#nameLabel::before{
+	content: '\f007';
+	float: left;
+	font-family: FontAwesome;
+	font-weight: 400;
+	display: inline-block;
+	color: #888;
+	font-size: 16px;
+	padding-right: 5px;
+	transition: .5s;
+}
+.loginForm form input[type=submit]{
+	width: 50%;
+	border: 1px #3367d6;
+	outline: 1px;
+	background : #3367d6;
+	border-radius: 50px;
+	color: #fff;
+	padding: 7px;
+	box-shadow: 2px 1px 15px 2px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	transform: translate(50%,235%);
+}
+.onFocus{
+	top: -20px !important;
+	font-size: 12px !important;
+	color: #3367d6 !important;
+}
+.onFocus::before{
+	top: -20px !important;
+	font-size: 12px !important;
+	color: #3367d6 !important;
+}
+.loginBox .logo{
+	position: absolute;
+	height: 40%;
+	width: 100%;
+	left: 0;
+}
+.loginBox .logo img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.idBox { padding: 0 10px; }
+
+.loginBox .loginForm form input[type=submit].submit-btn {
+    width: 50%;
+    border: 1px #3367d6;
+    outline: 1px;
+    background: #3367d6;
+    border-radius: 50px;
+    color: #fff;
+    padding: 7px;
+    box-shadow: 2px 1px 15px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transform: translate(50%,215%);
+}

@@ -1,0 +1,287 @@
+<div class="sideBar col-md-3" id="accordion">
+  <ul aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button"><i class="fa fa-user faa-passing" aria-hidden="true"></i>&nbsp; Users</a>
+        <div class="panel-collapse collapse" id="collapseOne" role="tabpanel">
+            <ul class="panel-group" id="accordion12">
+                    <li>
+                        <a id="manageUsers" href="<%=request.getContextPath()%>/manageUsers.htm">Manage Users</a>
+                    </li>
+                    <li>
+                        <div class="panel">
+                            <a aria-expanded="false" class="collapsed" data-parent="#accordion12" data-toggle="collapse" href="#collapseOneTwo">Create Users</a>
+                            <div class="panel-collapse collapse" id="collapseOneTwo">
+                                <ul>
+                                    <li>
+                                        <a id="enrollUsers" href="<%=request.getContextPath()%>/enrollUsers.htm">Enroll</a>
+                                    </li>
+                                    <li>
+                                        <a id="uploadUsers" href="<%=request.getContextPath()%>/uploadUsers.htm">Upload</a>
+                                    </li>
+                                    <li>
+                                        <a  id="ldapUsers" href="<%= request.getContextPath()%>/createUserByLdap.htm">LDAP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role="button"><i class="fa fa-users  faa-passing" aria-hidden="true"></i>&nbsp; Groups</a>
+        <div class="panel-collapse collapse panel-group" id="collapseTwo" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageGroup" href="<%= request.getContextPath()%>/manageGroups.htm">Manage Groups</a>
+                </li>
+                <li>
+                    <a id="createGroup" href="<%= request.getContextPath()%>/createGroup.htm">Create Group</a>
+                </li>                                    
+            </ul>
+        </div>
+    </li>
+    
+      <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapsethirteen" role="button"><i class="fa fa-cubes faa-passing" aria-hidden="true"></i>&nbsp; Role Master	</a>
+        <div class="panel-collapse collapse panel-group" id="collapsethirteen" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageRole" href="<%= request.getContextPath()%>/manageRoles.htm">Manage Role</a>
+                </li>
+                <li>
+                    <a id="createRole" href="<%= request.getContextPath()%>/createRole.htm">Create Role</a>
+                </li>                                    
+            </ul>
+        </div>
+    </li>
+    
+    
+    <!-- <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseTen" role="button"><i class="fa fa-sitemap faa-passing" aria-hidden="true"></i>&nbsp; Departments</a>
+        <div class="panel-collapse collapse panel-group" id="collapseTen" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageDepartment" href="<%= request.getContextPath()%>/manageDepartment.htm">Manage Department</a>
+                </li>
+                <li>
+                    <a id="createDepartment" href="<%= request.getContextPath()%>/createDepartment.htm">Create Department</a>
+                </li>                                    
+            </ul>
+        </div>
+    </li> -->
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseTwelve" role="button"><i class="fa fa-check-square faa-passing" aria-hidden="true"></i>&nbsp; Approvals</a>
+        <div class="panel-collapse collapse panel-group" id="collapseTwelve" role="tabpanel">
+            <ul>
+                <!-- <li>
+                    <a id="approval" href="<%= request.getContextPath()%>/manage-approval-configuration.htm">Manage Approval Configuration</a>
+                </li> -->
+                <li>
+                    <a id="manageApprovalConfiguration" href="<%= request.getContextPath()%>/manage-approval-configuration.htm">Approval Workflow Configuration</a>
+                </li>                                    
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role="button"><i class="fa fa-shield faa-passing" aria-hidden="true"></i>&nbsp; Authentication Types</a>
+        <div class="panel-collapse collapse" id="collapseThree" role="tabpanel">
+            <ul>
+                <li class="panel-group">
+                    <a id="manageEnrolCustm" href="<%= request.getContextPath()%>/ManageEnrolledCustomers.html">Manage Enrolled Customers</a>
+                </li>
+                <li class="panel-group">
+                    <a id="manageAuthSetting" href="<%= request.getContextPath()%>/ManageAuthenticationSettings.html">Manage Authentication Settings</a>
+                </li>
+                <li class="panel-group">
+                    <a id="registerHardToken" href="<%= request.getContextPath()%>/register-seed-value-htok.htm">Register Hard Token</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseSeven" role="button"><i class="fa fa-credit-card-alt faa-passing" aria-hidden="true"></i>&nbsp; Transaction Parameters</a>
+        <div class="panel-collapse collapse panel-group" id="collapseSeven" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageTxn" href="<%=request.getContextPath()%>/managetxnparameter.htm">Manage Transaction Parameters</a>
+                </li>
+                <li>
+                    <a id="createTxn" href="<%=request.getContextPath()%>/createtxnparameter.htm">Create Transaction Parameter</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseFive" role="button"><i class="fa fa-exclamation-triangle severity faa-passing" aria-hidden="true"></i>&nbsp; Severity Master</a>
+        <div class="panel-collapse collapse panel-group" id="collapseFive" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageSeverity" href="<%=request.getContextPath()%>/getmanagerisktype.htm">Manage Severity Types</a>
+                </li>
+                <li>
+                    <a id="createSeverity" href="<%=request.getContextPath()%>/getrisktype.htm">Create Severity Type</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseSix" role="button"><i class="fa fa-th faa-passing" aria-hidden="true"></i>&nbsp; Apps & Resources</a>
+        <div class="panel-collapse collapse panel-group" id="collapseSix" role="tabpanel">
+            <ul>
+                <li>
+                    <div class="panel">
+                        <a aria-expanded="false" class="collapsed" data-parent="#accordion61" data-toggle="collapse" href="#collapseSixOne">Apps</a>
+                        <div class="panel-collapse collapse" id="collapseSixOne">
+                            <ul>
+                                <li>
+                                    <a id="manageApp" href="<%=request.getContextPath()%>/manageapp.htm">Manage Apps</a>
+                                </li>
+                                <li>
+                                    <a id="createApp" href="<%=request.getContextPath()%>/createapp.htm">Create App</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="panel">
+                        <a aria-expanded="false" class="collapsed" data-parent="#accordion61" data-toggle="collapse" href="#collapseSixTwo">Resources</a>
+                        <div class="panel-collapse collapse" id="collapseSixTwo">
+                            <ul>
+                                <li>
+                                    <a id="manageResource" href="<%=request.getContextPath()%>/managesource.htm">Manage Resources</a>
+                                </li>
+                                <li>
+                                    <a id="createResource" href="<%=request.getContextPath()%>/createresource.htm">Create Resource</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role="button"><i class="fa fa-exclamation-circle faa-passing" aria-hidden="true"></i>&nbsp; Risk Profiles</a>
+        <div class="panel-collapse collapse panel-group" id="collapseFour" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageRiskProfile" href="<%=request.getContextPath()%>/manageriskprofile.htm">Manage Risk Profiles</a>
+                </li>
+                <li>
+                    <a id="createRiskProfile" href="<%=request.getContextPath()%>/createriskprofile.htm">Create Risk Profile</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseEight" role="button"><i class="fa fa-file-text faa-passing" aria-hidden="true"></i>&nbsp; Policy</a>
+        <div class="panel-collapse collapse panel-group" id="collapseEight" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="managePolicy" href="<%=request.getContextPath()%>/managepolicy.htm">Manage Policies</a>
+                </li>
+                <li>
+                    <a id="createPolicy" href="<%=request.getContextPath()%>/createpolicy.htm">Create Policy</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="panel panel-default">
+        <a id="backupNav" data-parent="#accordion" href="<%=request.getContextPath()%>/emidam-backup.htm"><i class="fa fa-retweet" aria-hidden="true"></i>&nbsp; Backup</a>
+    </li>
+     <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseFourteen" role="button"><i class="fa fa-list-alt faa-passing" aria-hidden="true"></i>&nbsp; Review Access</a>
+        <div class="panel-collapse collapse panel-group" id="collapseFourteen" role="tabpanel">
+            <ul>
+                <li>
+                     <a id="sechduleReviewAccess" href="<%=request.getContextPath()%>/sechduleReviewAccess.htm">Schedule Access Review </a> 
+                </li>
+                <li>
+                     <a id="sechduledReviewAccess" href="<%=request.getContextPath()%>/sechduledReviewAccess.htm">Scheduled Access Review </a> 
+                </li>
+            </ul>
+        </div>
+    </li> 
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseNine" role="button"><i class="fa fa-flag faa-passing" aria-hidden="true"></i>&nbsp; Activity Log</a>
+        <div class="panel-collapse collapse panel-group" id="collapseNine" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="myActivityLog" href="<%=request.getContextPath()%>/MyActivityLog.html">My Activity Log</a>
+                </li>
+                <li>
+                    <a id="userActivityLog" href="<%=request.getContextPath()%>/getUserActivityLog.htm">User Activity Log</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+     <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapse11" role="button"><i class="fa fa-plug" aria-hidden="true"></i>&nbsp; LDAP</a>
+        <div class="panel-collapse collapse panel-group" id="collapse11" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageLdapConnection" href="<%= request.getContextPath()%>/manageLdapConnection.htm">Manage Connections</a>
+                </li>
+                <li>
+                    <a id="createLdapConnection" href="<%= request.getContextPath()%>/createLdapConnection.htm">Create Connections</a>
+                </li>                                    
+            </ul>
+        </div>
+    </li>
+    <!-- <li class="panel panel-default">
+        <a aria-expanded="false" class="ActLog" href="<%=request.getContextPath()%>/getUserActivityLog.htm" role="button"><i class="fa fa-flag" aria-hidden="true"></i>&nbsp; Activity Log</a>
+    </li> -->
+<li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapseEleven" role="button"><i class="fa fa-expeditedssl faa-passing" aria-hidden="true"></i>&nbsp; SAML</a>
+        <div class="panel-collapse collapse panel-group" id="collapseEleven" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="manageSAML" href="<%=request.getContextPath()%>/manageSamlAttributes.htm">Manage SAML</a>
+                </li>
+                <li>
+                    <a id="mapSAMLAttributes" href="<%=request.getContextPath()%>/getSamlAttributeKeys.htm">Map SAML Attributes</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="panel panel-default">
+        <a aria-expanded="false" class="collapsed faa-parent animated-hover" data-parent="#accordion" data-toggle="collapse" href="#collapsefifteen" role="button"><i class="fa fa-area-chart faa-passing" aria-hidden="true"></i>&nbsp; Report</a>
+        <div class="panel-collapse collapse panel-group" id="collapsefifteen" role="tabpanel">
+            <ul>
+                <li>
+                    <a id="PasswordResetsPerDepartment" href="<%=request.getContextPath()%>/get-password-reset-per-dept-report-page.htm">Password resets per department</a>
+                </li>
+                <li>
+                    <a id="PasswordChangesPerDepartment" href="<%=request.getContextPath()%>/get-password-changes-per-dept-report-page.htm">Password changes per department</a>
+                </li>
+                <li>
+                    <a id="ProfileChangesPerDepartment" href="<%=request.getContextPath()%>/get-profile-changes-per-dept-report-page.htm">Profile changes per department</a>
+                </li>
+                <li>
+                    <a id="UserCreatedPerDepartment" href="<%=request.getContextPath()%>/get-user-created-per-dept-report-page.htm">User created per department</a>
+                </li>
+                <li>
+                    <a id="RiskProfileCreatedPerApplication" href="<%=request.getContextPath()%>/get-risk-profile-per-app-report-page.htm">Risk profile created per application</a>
+                </li>
+                <li>
+                    <a id="RiskProfileCreatedPerDepartment" href="<%=request.getContextPath()%>/get-risk-profile-per-dept-page.htm">Risk profile created per department</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="panel panel-default">
+        <a id="backupNav" data-parent="#accordion" href="<%=request.getContextPath()%>/emidam-myschedule-reports.htm"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp; My scheduled reports </a>
+    </li>
+</ul>
+</div>    
