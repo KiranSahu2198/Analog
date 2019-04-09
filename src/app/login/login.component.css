@@ -41,18 +41,17 @@ body { font-family: 'Open Sans', sans-serif; color: #333333; background: #eeeeee
 	clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
 }
 .loginBox .loginForm{
-	height: 250px;
 	box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	background: #fff;
 	left: 50%;
 	top: 70%;
 	transform: translate(-50%, -70%);
+	padding: 30px;
 }
 .loginBox .loginForm h2{
 	font-size: 24px;
-	margin-bottom: 40px;
-	padding-top: 20px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 .loginBox .loginForm form input{
@@ -144,4 +143,11 @@ body { font-family: 'Open Sans', sans-serif; color: #333333; background: #eeeeee
     box-shadow: 2px 1px 15px 2px rgba(0, 0, 0, 0.2);
     font-size: 14px;
     transform: translate(50%,215%);
+}
+
+mat-form-field {
+	width:100%;
+}
+.mleft10 {
+   margin-left: 10px !important;
 }
