@@ -13,6 +13,7 @@ export class SectionComponent implements OnInit {
   public userName = '';
   public userId = ''; 
   public userD = {  };
+  public errorMsg = '';
 
   public userData = [];
 
@@ -20,7 +21,8 @@ export class SectionComponent implements OnInit {
 
   ngOnInit() {
     //this.userData = this.userDetails.userData();
-    this.userDetails.userData().subscribe(data => this.userData = data);
+    this.userDetails.userData().subscribe(data => this.userData = data,
+                                          error => this.errorMsg = error);
   }
 
   come(){

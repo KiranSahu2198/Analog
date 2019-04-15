@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { iuser } from './user';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +14,12 @@ export class UserDetailsService {
 
   private url: string = './assets/data/user.json';
   userData(): Observable<iuser[]> {
-    return this.http.get<iuser[]>(this.url);
+    return this.http.get<iuser[]>(this.url)
+            .catch(this.errorHandler);
+  }
+
+  errorHandler(error: HttpErrorResponse){
+    return Observable.throw(error.message || "Server Error");
   }
 
   /* userData(){
