@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { UserDetailsService } from './user-details.service';
+import { HttpClientModule } from '@angular/common/http';
 //import { Images } from '@assets/images';
 
 @NgModule({
@@ -34,9 +37,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     //FormControl,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ UserDetailsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

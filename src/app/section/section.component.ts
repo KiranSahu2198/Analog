@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { UserDetailsService } from '../user-details.service';
 
 @Component({
   selector: 'app-section',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
-  constructor() { }
+  @Input('parentData') public user;
+  @Output() public sendData = new EventEmitter();
+  public userName = '';
+  public userId = ''; 
+  public userD = {  };
+
+  public userData = [];
+
+  constructor(private userDetails: UserDetailsService) { }
 
   ngOnInit() {
+    //this.userData = this.userDetails.userData();
+    this.userDetails.userData().subscribe(data => this.userData = data);
+  }
+
+  come(){
+    this.userD = {
+    "name": this.userName,
+    "id": this.userId
+    };
+    this.sendData.emit(this.userD);
   }
 
 }

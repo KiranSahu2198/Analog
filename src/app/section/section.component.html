@@ -1,3 +1,16 @@
 <p>
-  section works!
+  {{user.name}}
 </p>
+<mat-form-field>
+  <mat-label thumbLabel tickInterval="interval">userName</mat-label>
+  <input matInput [(ngModel)]="userName">
+</mat-form-field>
+<mat-form-field>
+  <mat-label thumbLabel tickInterval="interval">userId</mat-label>
+  <input matInput [(ngModel)]="userId">
+</mat-form-field>
+{{user.id}}
+<button mat-flat-button color="accent" (click)="come();">click</button>
+  <mat-list *ngFor="let data of userData">
+    <mat-list-item>{{data.name}} | {{data.id}} | {{data.role}}</mat-list-item>
+  </mat-list>

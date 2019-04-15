@@ -1,4 +1,4 @@
-<!-- <app-header></app-header>
+<!-- <app-login></app-login> -->
+<app-header [parentData] = "user"></app-header>
 <app-side-bar></app-side-bar>
-<app-section></app-section> -->
-<app-login></app-login>
+<app-section [parentData] = "user" (sendData)="user = $event"></app-section>
