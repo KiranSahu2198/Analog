@@ -17,6 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { UserDetailsService } from './user-details.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { routingComponents } from './app-routing/app-routing.module';
+import { PostLoginComponent } from './post-login/post-login.component';
 //import { Images } from '@assets/images';
 
 @NgModule({
@@ -26,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     SideBarComponent,
     ContainerComponent,
     SectionComponent,
-    LoginComponent
+    LoginComponent,
+    routingComponents,
+    PostLoginComponent
     //Images
   ],
   imports: [
@@ -38,7 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     //FormControl,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [ UserDetailsService ],
   bootstrap: [AppComponent]

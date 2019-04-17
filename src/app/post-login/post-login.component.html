@@ -1,0 +1,3 @@
+<app-header [parentData]="user"></app-header>
+<app-side-bar></app-side-bar>
+<app-section [parentData]="user" (sendData)="user = $event"></app-section>
